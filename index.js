@@ -1,10 +1,16 @@
-const request = require('supertest');
-const app = require('./index');
+const express = require('express');
 
-describe('GET /', () => {
-  it('responds with "Hello, world!"', async () => {
-    const response = await request(app).get('/');
-    expect(response.status).toBe(200);
-    expect(response.text).toBe('Hello, world!');
-  });
+const app = express();
+const PORT = 3000;
+
+// Define a route handler for the root path
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
 });
+
+// Start the server
+const server = app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+module.exports = server; // Export the server instance
