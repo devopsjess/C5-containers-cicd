@@ -1,0 +1,5 @@
+ecs_cluster_name = "wutyee-ecs-cluster-dev"
+ecs_service_name = "wutyee-ecs-service-dev"
+ecs_task_defn_family = "wutyee-ecs-task-def-dev"
+ecs_container_name = "wutyee-container-dev"
+ecs_port_name = "wutyee-3000-tcp-dev"

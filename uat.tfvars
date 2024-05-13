@@ -1,0 +1,5 @@
+ecs_cluster_name = "wutyee-ecs-cluster-uat"
+ecs_service_name = "wutyee-ecs-service-uat"
+ecs_task_defn_family = "wutyee-ecs-task-def-uat"
+ecs_container_name = "wutyee-container-uat"
+ecs_port_name = "wutyee-3000-tcp-uat"
